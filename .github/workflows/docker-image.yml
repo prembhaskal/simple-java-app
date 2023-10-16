@@ -27,5 +27,5 @@ jobs:
       with:
         context: .
         push: ${{ github.event_name != 'pull_request' }}
-        tags: bpremkumar532/simple-java-app
+        tags: bpremkumar532/simple-java-app:1.0.0
         labels: 1.0.0
