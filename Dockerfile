@@ -14,8 +14,8 @@ RUN mvn package -DskipTests
 # It's important to use OpenJDK 8u191 or above that has container support enabled.
 # https://hub.docker.com/r/adoptopenjdk/openjdk8
 # https://docs.docker.com/develop/develop-images/multistage-build/#use-multi-stage-builds
-#FROM adoptopenjdk/openjdk8:jdk8u202-b08-alpine-slim
-FROM eclipse-temurin:8u382-b05-jdk-focal
+#FROM eclipse-temurin:8u382-b05-jdk-focal
+FROM adoptopenjdk/openjdk8:jdk8u202-b08-alpine-slim
 
 # Copy the jar to the production image from the builder stage.
 COPY --from=builder /app/target/helloworld-*.jar /helloworld.jar
