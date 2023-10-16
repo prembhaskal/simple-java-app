@@ -28,4 +28,4 @@ jobs:
         context: .
         push: ${{ github.event_name != 'pull_request' }}
         tags: bpremkumar532/simple-java-app
-        labels: latest
+        labels: 1.0.0
